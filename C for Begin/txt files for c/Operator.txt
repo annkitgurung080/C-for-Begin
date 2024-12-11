@@ -1,0 +1,37 @@
+//////////////////////////////////////////////////////////////////////////////
+/* Operator Overloading in C++
+Explanation:
+To overload an operator, we use a special operator function. We define the function inside the class or structure whose objects/variables we want the overloaded operator to work with.
+
+* when an operator is overloaded with multiple jobs, it is known as operator overloading
+* it is a way to implement compile time polymorphism
+
+
+///////////////////////////////////
+class className {
+    ... .. ...
+    public
+       returnType operator symbol (arguments) {
+           ... .. ...
+       }
+    ... .. ...
+};
+
+Here,
+
+    returnType --> is the return type of the function.
+    operator --> is a keyword.
+    symbol --> is the operator we want to overload. Like: + < - ++ etc.
+    arguments --> is the arguments passed to the function.
+
+
+//////////////////////////////////
+Rules to be Remembered
+--> c++ operators (+ - < ++) do not directly operate on the objects
+--> Any symbol can be used as function name
+    - if it is valid operator in C language
+    - if it is preceded by operator keyword
+--> You can not overload sizeof and ?: operator
+
+
+*/

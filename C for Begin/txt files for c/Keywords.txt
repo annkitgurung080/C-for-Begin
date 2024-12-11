@@ -1,0 +1,12 @@
+Keywords:
+---------
+ Keywords in C can be defined as the pre-defined or the reserved words having its own importance, and each keyword has its own functionality. Since keywords are the pre-defined words used by the compiler, so they cannot be used as the variable names. If the keywords are used as the variable names, it means that we are assigning a different meaning to the keyword, which is not allowed. C language supports 32 keywords given below:
+
+auto 	double 	int 	struct
+break 	else 	long 	switch
+case 	enum 	register 	typedef
+char 	extern 	return 	union
+const 	float 	short 	unsigned
+continue 	for 	signed 	void
+default 	goto 	sizeof 	volatile
+do 	if 	static 	while

@@ -1,0 +1,29 @@
+Variables:
+1. Must indicate what value it stores
+2. Ideally should be assigned some value at the time of declaration
+3. Must not contain any special character, but underscore is allowed
+4. Must start with an alphabet or underscore
+5. Must not be a keyword
+
+
+Valid Variables:
+int s_no
+float pi_no
+char o
+int _sno
+
+Invalid Variables:
+int s-no
+float 3.14
+char 0
+int int
+
+Declaring Variables
+
+Syntax:
+datatype variable_name = value;
+
+E.g.
+int num1 = 10;
+
+see example --> variable1.c

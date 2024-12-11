@@ -1,0 +1,94 @@
+public:-----------------------------------------------
+
+The public keyword is an access specifier. Access specifiers define how the members (attributes and methods) of a class can be accessed. In the example below, the members are public - which means that they can be accessed and modified from outside the code. 
+
+class MyClass {  // The class
+  public:        // Access specifier
+    // class members goes here
+    int a;
+    string nam;
+};
+
+However, what if we want members to be private and hidden from the outside world?
+
+In C++, there are three access specifiers:
+
+    1. public - members are accessible from outside the class
+    2. private - members cannot be accessed (or viewed) from outside the class
+    3. protected - members cannot be accessed from outside the class, however, they can be accessed in "inherited" classes. 
+
+In the following example, we demonstrate the differences between public and private members:
+
+class MyClass {
+  public:    // Public access specifier
+    int x;   // Public attribute
+  private:   // Private access specifier
+    int y;   // Private attribute
+};
+
+int main() {
+  MyClass myObj;
+  myObj.x = 25;  // Allowed (public)
+  myObj.y = 50;  // Not allowed (private)
+  return 0;
+}
+
+Private:-------------------------------------------------
+
+By default, all members of a class are private if you don't specify an access specifier.
+
+Example:
+class MyClass{
+    int x; // private attribute
+    int y; // private attribute
+}
+
+Protected:-----------------------------------------------
+
+Protected access modifier is similar to that of private access modifiers, the difference is that the class member declared as Protected are inaccessible outside the class but they can be accessed by any subclass(derived class) of that class.
+
+Example:
+// C++ program to demonstrate
+// protected access modifier
+#include <iostream>
+using namespace std;
+  
+// base class
+class Parent {
+    // protected data members
+protected:
+    int id_protected;
+};
+  
+// sub class or derived class
+class Child : public Parent {
+  
+public:
+    void setId(int id)
+    {
+  
+        // Child class is able to access the inherited
+        // protected data members of base class
+  
+        id_protected = id;
+    }
+  
+    void displayId()
+    {
+        cout << "id_protected is: " << id_protected << endl;
+    }
+};
+  
+// main function
+int main()
+{
+  
+    Child obj1;
+  
+    // member function of the derived class can
+    // access the protected data members of the base class
+  
+    obj1.setId(81);
+    obj1.displayId();
+    return 0;
+}

@@ -1,0 +1,43 @@
+The Format specifier is a string used in the formatted input and output functions. The format string determines the format of the input and output. The format string always starts with a '%' character.
+
+The commonly used format specifiers in printf() function are:
+
+%d or %i 	
+It is used to print the signed integer value where signed integer means that the variable can hold both positive and negative values.
+  
+    int main()  
+    {  
+      int b=6;  
+      int c=8;  
+      printf("Value of b is:%d", b);  
+      printf("\nValue of c is:%d",c);    
+    }  
+
+%u
+It is used to print the unsigned integer value where the unsigned integer means that the variable can hold only positive value.
+int main()  
+{  
+  int b = 10;  
+  int c= -10;  
+  printf("Value of b is:%u", b);  
+  printf("\nValue of c is:%u",c);  
+}
+
+
+%f
+It is used for printing the decimal floating-point values. By default, it prints the 6 values after '.'.
+    int main()  
+    {  
+      float y=3.4;  
+      printf("Floating point value of y is: %f", y);  
+    }  
+
+%s
+It is used to print the strings.
+    
+    int main()  
+    {  
+      printf("%s", "javaTpoint");   
+    }  
+
+See Example --> format_specifier.c
